@@ -1,0 +1,100 @@
+@Sub SRSurface = SRSurfaceDetailNormalMap
+    Normal Map = @Tex file "../Textures/dina-teardots-normal.tga(1)_TEST.dds" fileFull "D:/File Holder/tlou characters zip/Nick/Assets/Textures/dina-teardots-normal.tga(1)_TEST.dds" srgb 0 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Scale & Bias = 1
+    Flip X = 0
+    Flip Y = 1
+    Flip Z = 0
+    Generate Z = 0
+    Object Space = 0
+    Detail Normal Map = nil
+    UV Set = 0
+    Scale & Bias;detail = 1
+    Flip X;detail = 0
+    Flip Y;detail = 0
+    Flip Z;detail = 0
+    Detail Tiling = 1
+    Detail Offset = 0
+    Detail Weight Map = nil
+    Channel;detail = 0
+    Detail Weight = 1
+@End
+
+@Sub SRAlbedo = SRAlbedoMap
+    Albedo Map = @Tex file "../Textures/dina-caruncle-color.tga(1).dds" fileFull "D:/File Holder/tlou characters zip/Nick/Assets/Textures/dina-caruncle-color.tga(1).dds" srgb 1 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Color = 0.938921 0.811096 0.811096
+@End
+
+@Sub SRDiffusion = SRDiffusionLambertian
+@End
+
+@Sub SRTransmission = SRTransmissionSubsurfaceDiffusion
+    Scatter Map = nil
+    Scatter Depth (mm) = 1
+    Scatter Color = 1 0.25 0.125
+    Fuzz Map = nil
+    Fuzz = 0
+    Fuzz Color = 1 1 1
+    Mask Fuzz with Gloss = 0
+    Use Translucency = 1
+    Mask Map = nil
+    Channel;Mask = 1
+    Mask = 1
+    Invert;Mask = 1
+    Use Albedo Alpha = 1
+    Strict Normals = 0
+@End
+
+@Sub SRReflection = SRReflectionGGX
+@End
+
+@Sub SRMicrosurface = SRMicrosurfaceAdvancedMap
+    Microsurface Map = nil
+    Channel = 0
+    Mode = 0
+    Maximum = 1
+    Minimum = 0.371287
+    Exponent = 2.75031
+    Horizon Smoothing = 0
+@End
+
+@Sub SRReflectivity = SRReflectivitySpecularMap
+    Specular Map = nil
+    Channel;specular = 1
+    Intensity = 0.0976563
+    Color = 1 1 1
+    Fresnel = 0
+    Color;fresnel = 1 1 1
+    Conserve Energy = 1
+@End
+
+@Sub SRClearcoatReflection = SRReflectionGGX
+@End
+
+@Sub SRClearcoatMicrosurface = SRMicrosurfaceRoughnessMap
+    Roughness Map = nil
+    Channel = 0
+    Roughness = 0.3
+    Invert;roughness = 0
+@End
+
+@Sub SRClearcoatReflectivity = SRReflectivitySpecularMap
+    Specular Map = nil
+    Channel;specular = 4
+    Intensity = 0.04
+    Color = 1 1 1
+    Fresnel = 1
+    Color;fresnel = 1 1 1
+    Conserve Energy = 1
+@End
+
+@Sub SRMerge = SRMerge
+    Texture Tiling = 1
+    Tile U = 1
+    Offset U = 0
+    Tile V = 1
+    Offset V = 0
+    Wrap = 1
+    Aniso = 2
+    Filter = 1
+@End
+
