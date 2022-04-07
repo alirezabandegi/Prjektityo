@@ -1,0 +1,84 @@
+#
+# shrek_ot_strelok7171(Сенгаев Лев).mtl
+#
+
+newmtl act_eye.dds
+illum 2
+Kd 0.800000 0.800000 0.800000
+Ka 0.200000 0.200000 0.200000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd act_eye.dds
+
+newmtl act_stalker_nebo_3.dds
+illum 2
+Kd 0.800000 0.800000 0.800000
+Ka 0.200000 0.200000 0.200000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd act_stalker_nebo_3.dds
+
+newmtl props_kotelok_army_ot_strelok71
+illum 2
+Kd 0.800000 0.800000 0.800000
+Ka 0.200000 0.200000 0.200000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd props_kotelok_army_ot_strelok7171.dds
+
+newmtl act_stalke2_sh.dds
+illum 2
+Kd 0.800000 0.800000 0.800000
+Ka 0.200000 0.200000 0.200000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd act_stalke2_sh.dds
+
+newmtl act_stalke2_sh1.dds
+illum 2
+Kd 0.800000 0.800000 0.800000
+Ka 0.200000 0.200000 0.200000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd act_stalke2_sh1.dds
+
+newmtl act_strelok7171_Rat_Whitearef 
+illum 2
+Kd 0.800000 0.800000 0.800000
+Ka 0.200000 0.200000 0.200000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd act_strelok7171_Rat_Whitearef .dds
+
+newmtl act_strelok7171_Shrek
+illum 2
+Kd 0.800000 0.800000 0.800000
+Ka 0.200000 0.200000 0.200000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd act_strelok7171_Shrek.dds
+
+newmtl act_strelok7171_zybaref
+illum 2
+Kd 0.800000 0.800000 0.800000
+Ka 0.200000 0.200000 0.200000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd act_strelok7171_zybaref.dds
+
+newmtl act_strelok7171_Rat_White
+illum 2
+Kd 0.800000 0.800000 0.800000
+Ka 0.200000 0.200000 0.200000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd act_strelok7171_Rat_White.dds
