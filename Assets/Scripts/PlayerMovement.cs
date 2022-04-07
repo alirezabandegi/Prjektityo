@@ -8,11 +8,15 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     //Player rotation for rotate left or right;
     public float rotation;
+    Animator animator;
+    static readonly int Horizontal = Animator.StringToHash("Horizontal");
+    static readonly int Vertical = Animator.StringToHash("Vertical");
+    static readonly int Moving = Animator.StringToHash("Moving");
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }//Start
 
     // Update is called once per frame
@@ -24,7 +28,11 @@ public class PlayerMovement : MonoBehaviour
         float moveLeftOrRight = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         //Add rotation for player rotation to left or right
         float RotationLeftOrRight = Input.GetAxis("Mouse X") * rotation * Time.deltaTime;
-
+        
+        animator.SetFloat(Horizontal, moveLeftOrRight);
+        animator.SetFloat(Vertical, moveForwardOrBackward);
+        float absoluteMovement = Mathf.Abs(moveForwardOrBackward + moveLeftOrRight);
+        animator.SetBool(Moving, absoluteMovement > 0);
 
         //forward or backward player
         transform.Translate(moveLeftOrRight, 0, moveForwardOrBackward);
