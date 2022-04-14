@@ -211,5 +211,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerWalk: 8.5
-  playerRun: 11
+  playerRun: 12
   rotation: 100
