@@ -318,6 +318,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4139228542482187052, guid: 32d2d0fe8040c774a9c61ef0aa6e6c6c, type: 3}
+      propertyPath: m_Drag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4139228542482187052, guid: 32d2d0fe8040c774a9c61ef0aa6e6c6c, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4139228542482187053, guid: 32d2d0fe8040c774a9c61ef0aa6e6c6c, type: 3}
       propertyPath: m_Name
       value: PlayerTester
