@@ -1,0 +1,212 @@
+11 shaders
+================================================
+Shader 0 = objects/characters/npc-named/nick/nick-head:default,2e1f1de9-d901-4818-a3c4-83d6bc9944e0,physical-character.fx
+================================================
+g_tNdFetchBaseColor01Map	art/objects/characters/npc-named/nick/nick-head-color.tga
+g_tNdFetchNormal01Map	art/objects/characters/npc-named/nick/nick-head-normal.tga
+g_tNdFetchAmbientNormal01Map	art/objects/characters/npc-named/nick/nick-head_bentnormal.tga
+g_tNdFetchAo01Map	art/objects/characters/npc-named/nick/nick-head-ao.tga
+g_tNdFetchDetailNormal02Map	art/objects/characters/npc-named/leah/textures/leah-head-details-normal.tga
+g_tNdFetchSkinRoughness02Map	art/objects/characters/npc-named/nick/nick-head-roughness.tga
+g_tNdFetchSkinSpecularMask02Map	art/objects/characters/npc-named/nick/nick-head-specular-cavity.tga
+g_tNdFetchPeachFuzzMask03Map	art/objects/characters/ellie/textures/ellie-head-fuzz-mask.tga
+g_tNdFetchWetnessMask04Map	art/objects/characters/npc-normal/textures/universal/head-body/head-light-wetness-mask.tga
+g_tNdFetchSnowMask04Map	art/objects/characters/npc-normal/textures/universal/head-body/head-snow-mask.tga
+g_tNdFetchArtistMudMask04Map	art/objects/characters/npc-normal/textures/universal/head-body/head-medium-mud-mask.tga
+g_tNdFetchDirtMask04Map	art/objects/characters/npc-normal/textures/universal/head-body/head-light-dirt-mask.tga
+g_tNdFetchFaceMicroDetailMask1Map	art/shared/characters/skin/skin-details/face-masks/skinmicrodetail-mask1.tga
+g_tNdFetchFaceMicroDetailMask2Map	art/shared/characters/skin/skin-details/face-masks/skinmicrodetail-mask2.tga
+g_tNdFetchFaceMicroDetailCheekMap	art/shared/characters/skin/skin-details/texturexyz-normal-ao/mask1-red-nao.tga
+g_tNdFetchFaceMicroDetailEyeLidMap	art/shared/characters/skin/skin-details/texturexyz-normal-ao/mask1-green-nao.tga
+g_tNdFetchFaceMicroDetailForeHeadMap	art/shared/characters/skin/skin-details/texturexyz-normal-ao/mask1-blue-nao.tga
+g_tNdFetchFaceMicroDetailInnerCheekMap	art/shared/characters/skin/skin-details/texturexyz-normal-ao/mask1-alpha-nao.tga
+g_tNdFetchFaceMicroDetailNoseMap	art/shared/characters/skin/skin-details/texturexyz-normal-ao/mask2-green-nao.tga
+g_tNdFetchFaceMicroDetailJawMap	art/shared/characters/skin/skin-details/texturexyz-normal-ao/mask2-blue-nao.tga
+g_tNdFetchFaceMicroDetailTempleMap	art/shared/characters/skin/skin-details/texturexyz-normal-ao/mask2-alpha-nao.tga
+g_tNdFetchFaceGenericMicroDetailMap	art/shared/characters/skin/skin-details/face-normal-ao/mask2-red-nao.tga
+g_tNdFetchSkinSinusoidalNormalMap	art/shared/characters/skin/skin-details/micro-sinusoidal-normal.tga
+g_tNdFetchSSSThicknessFaceMap	art/shared/characters/skin/skin-details/thickness-mask/female-head-thickness-mask.tga
+g_tNdFetchSkinNPCSssTransmitanceMaskMap	art/shared/characters/skin/skin-details/thickness-mask/npc-head-volume-mask.tga
+g_tNdFetchSnowColorMap	art/shared/characters/snow/snow-color.tga
+g_tNdFetchSnowNormalMap	art/shared/characters/snow/snow-normal.tga
+g_tNdFetchSnowThinMaskMap	art/shared/characters/snow/snow-thin-mask.tga
+g_tNdFetchCharacterSnowThresholdMaskMap	art/shared/background/asset-library/textures/base/snow/snow-vehicle-clumpy-blend.tga
+g_tNdFetchSnowMaskDetailsMap	art/shared/characters/snow/snow-detail-mask.tga
+g_tNdFetchMudColorMap	art/shared/characters/skin/mud-color.tga
+g_tNdFetchMudNormalMap	art/shared/characters/skin/mud-normal.tga
+g_tNdFetchDirtNormalMap	art/shared/characters/skin/sand/sand-thick-normal.tga
+================================================
+Shader 1 = objects/characters/npc-normal/head-parts/eyelashes-thick:default,1129cdeb-0227-4ca9-81d1-b29188c461cf,physical-character.fx
+================================================
+g_tNdFetchNormal01Map	art/shared/characters/eyes/eyelashes-normal.tga
+g_tNdFetchTransparency01Map	art/shared/characters/eyes/eyelashes-trans.tga
+g_tNdFetchAo01Map	art/shared/characters/eyes/eyelashes-ao.tga
+g_tNdFetchFaceGenericMicroDetailMap	art/shared/characters/skin/skin-details/face-normal-ao/mask2-red-nao.tga
+g_tNdFetchFabricBurnColorMap	art/shared/characters/fabrics/burn/burn-color.tga
+g_tNdFetchFabricBurnNormalRoughMap	art/shared/characters/fabrics/burn/burn-normalrough.tga
+g_tNdFetchNewBloodColorMap	art/shared/characters/blood/blood-color.tga
+g_tNdFetchBloodNormalMap	art/shared/characters/blood/blood-normal.tga
+g_tNdFetchBaseGoreDecalBaseColorMap	art/shared/characters/gore/gore-base-color.tga
+g_tNdFetchBaseGoreDecalBaseNormalAOMap	art/shared/characters/gore/gore-base-normalao.tga
+g_tNdFetchBaseGoreDecalTissueColorMap	art/shared/characters/gore/gorecap-tissue-color.tga
+g_tNdFetchBaseGoreDecalTissueNormalAOMap	art/shared/characters/gore/gorecap-tissue-normalao.tga
+g_tNdFetchBaseGoreDecalFatColorMap	art/shared/characters/gore/gorecap-fat-color.tga
+g_tNdFetchBaseGoreDecalFatNormalAOMap	art/shared/characters/gore/gorecap-fat-normalao.tga
+g_tNdFetchBaseGoreDecalBloodColorMap	art/shared/characters/gore/blood-coloralpha.tga
+g_tNdFetchBaseGoreDecalBloodNormalAOMap	art/shared/characters/gore/blood-normalao.tga
+g_tNdFetchBaseGoreDecalGutsdColorMap	art/shared/characters/gore/gorecap-guts-color.tga
+g_tNdFetchBaseGoreDecalGutsNormalAOMap	art/shared/characters/gore/gorecap-guts-normalao.tga
+================================================
+Shader 2 = objects/characters/npc-normal/head-parts/eyes-dark-brow-dark-sclera:default,b4ec6af7-5621-4328-a3e2-e500d81c2ddb,physical-character.fx
+================================================
+g_tNdFetchIrisColor01Map	art/objects/characters/npc-normal/textures/heads/female-heads/npc-head-f-cauc-02/npc-head-f-cauc-02-eyes-dark-brow.tga
+g_tNdFetchFaceGenericMicroDetailMap	art/shared/characters/skin/skin-details/face-normal-ao/mask2-red-nao.tga
+g_tNdFetchFabricBurnColorMap	art/shared/characters/fabrics/burn/burn-color.tga
+g_tNdFetchFabricBurnNormalRoughMap	art/shared/characters/fabrics/burn/burn-normalrough.tga
+g_tNdFetchNewBloodColorMap	art/shared/characters/blood/blood-color.tga
+g_tNdFetchBloodNormalMap	art/shared/characters/blood/blood-normal.tga
+g_tNdFetchBaseGoreDecalBaseColorMap	art/shared/characters/gore/gore-base-color.tga
+g_tNdFetchBaseGoreDecalBaseNormalAOMap	art/shared/characters/gore/gore-base-normalao.tga
+g_tNdFetchBaseGoreDecalTissueColorMap	art/shared/characters/gore/gorecap-tissue-color.tga
+g_tNdFetchBaseGoreDecalTissueNormalAOMap	art/shared/characters/gore/gorecap-tissue-normalao.tga
+g_tNdFetchBaseGoreDecalFatColorMap	art/shared/characters/gore/gorecap-fat-color.tga
+g_tNdFetchBaseGoreDecalFatNormalAOMap	art/shared/characters/gore/gorecap-fat-normalao.tga
+g_tNdFetchBaseGoreDecalBloodColorMap	art/shared/characters/gore/blood-coloralpha.tga
+g_tNdFetchBaseGoreDecalBloodNormalAOMap	art/shared/characters/gore/blood-normalao.tga
+g_tNdFetchBaseGoreDecalGutsdColorMap	art/shared/characters/gore/gorecap-guts-color.tga
+g_tNdFetchBaseGoreDecalGutsNormalAOMap	art/shared/characters/gore/gorecap-guts-normalao.tga
+g_tNdFetchScleraRedMaskMap	art/shared/characters/eyes/sclera-redness-mask.tga
+g_tNdFetchScleraColorRednessMap	art/shared/characters/eyes/sclera-redness-color.tga
+g_tNdFetchScleraColorRedMap	art/shared/characters/eyes/sclera-red-color.tga
+g_tNdFetchIrisHeightMaskMap	art/shared/characters/eyes/iris-height.tga
+g_tNdFetchEyesNormalMap	art/shared/utilities/textures/goop03-normal.tga
+g_tNdFetchIrisForwardNormalMap	art/shared/characters/eyes/iris-forward-normal.tga
+g_tNdFetchIrisNormalMap	art/shared/characters/eyes/iris-normal.tga
+g_tNdFetchScleraColorMap	art/shared/characters/eyes/sclera-neutral-color.tga
+================================================
+Shader 3 = objects/characters/npc-normal/head-parts/teeth-tongue-standard-test:default,b5829fc8-4915-4df2-8239-a098006560a7,physical-character.fx
+================================================
+g_tNdFetchBaseColor01Map	art/objects/characters/ellie/textures/ellie-teeth-color.tga
+g_tNdFetchNormal01Map	art/objects/characters/ellie/textures/ellie-teeth-normal.tga
+g_tNdFetchAo01Map	art/objects/characters/ellie/textures/ellie-teeth-ao.tga
+g_tNdFetchTeethEnamelMask02Map	art/shared/characters/teeth/teeth-enamel-mask.tga
+g_tNdFetchPack_RO_AO_03Map	art/objects/characters/ellie/textures/ellie-teeth-roughness.tga
+g_tNdFetchLinearBlend03Map	art/objects/characters/ellie/textures/ellie-teeth-blend.tga
+g_tNdFetchLinearBlend04Map	art/objects/characters/ellie/textures/ellie-teeth-shadow-blend.tga
+g_tNdFetchFaceGenericMicroDetailMap	art/shared/characters/skin/skin-details/face-normal-ao/mask2-red-nao.tga
+g_tNdFetchFabricBurnColorMap	art/shared/characters/fabrics/burn/burn-color.tga
+g_tNdFetchFabricBurnNormalRoughMap	art/shared/characters/fabrics/burn/burn-normalrough.tga
+g_tNdFetchNewBloodColorMap	art/shared/characters/blood/blood-color.tga
+g_tNdFetchBloodNormalMap	art/shared/characters/blood/blood-normal.tga
+g_tNdFetchBaseGoreDecalBaseColorMap	art/shared/characters/gore/gore-base-color.tga
+g_tNdFetchBaseGoreDecalBaseNormalAOMap	art/shared/characters/gore/gore-base-normalao.tga
+g_tNdFetchBaseGoreDecalTissueColorMap	art/shared/characters/gore/gorecap-tissue-color.tga
+g_tNdFetchBaseGoreDecalTissueNormalAOMap	art/shared/characters/gore/gorecap-tissue-normalao.tga
+g_tNdFetchBaseGoreDecalFatColorMap	art/shared/characters/gore/gorecap-fat-color.tga
+g_tNdFetchBaseGoreDecalFatNormalAOMap	art/shared/characters/gore/gorecap-fat-normalao.tga
+g_tNdFetchBaseGoreDecalBloodColorMap	art/shared/characters/gore/blood-coloralpha.tga
+g_tNdFetchBaseGoreDecalBloodNormalAOMap	art/shared/characters/gore/blood-normalao.tga
+g_tNdFetchBaseGoreDecalGutsdColorMap	art/shared/characters/gore/gorecap-guts-color.tga
+g_tNdFetchBaseGoreDecalGutsNormalAOMap	art/shared/characters/gore/gorecap-guts-normalao.tga
+g_tNdFetchTeethNoiseNormalMap	art/shared/utilities/textures/goop03-normal.tga
+================================================
+Shader 4 = objects/characters/npc-normal/head-parts/saliva:default,dc5dce4e-43e3-4919-a107-8af396d1f618,physical-character.fx
+================================================
+g_tNdFetchNormal02Map	art/shared/characters/eyes/tear-normal.tga
+g_tNdFetchLinearBlend02Map	art/shared/characters/eyes/tear-mask.tga
+g_tNdFetchFaceGenericMicroDetailMap	art/shared/characters/skin/skin-details/face-normal-ao/mask2-red-nao.tga
+g_tNdFetchFabricBurnColorMap	art/shared/characters/fabrics/burn/burn-color.tga
+g_tNdFetchFabricBurnNormalRoughMap	art/shared/characters/fabrics/burn/burn-normalrough.tga
+g_tNdFetchNewBloodColorMap	art/shared/characters/blood/blood-color.tga
+g_tNdFetchBloodNormalMap	art/shared/characters/blood/blood-normal.tga
+g_tNdFetchBaseGoreDecalBaseColorMap	art/shared/characters/gore/gore-base-color.tga
+g_tNdFetchBaseGoreDecalBaseNormalAOMap	art/shared/characters/gore/gore-base-normalao.tga
+g_tNdFetchBaseGoreDecalTissueColorMap	art/shared/characters/gore/gorecap-tissue-color.tga
+g_tNdFetchBaseGoreDecalTissueNormalAOMap	art/shared/characters/gore/gorecap-tissue-normalao.tga
+g_tNdFetchBaseGoreDecalFatColorMap	art/shared/characters/gore/gorecap-fat-color.tga
+g_tNdFetchBaseGoreDecalFatNormalAOMap	art/shared/characters/gore/gorecap-fat-normalao.tga
+g_tNdFetchBaseGoreDecalBloodColorMap	art/shared/characters/gore/blood-coloralpha.tga
+g_tNdFetchBaseGoreDecalBloodNormalAOMap	art/shared/characters/gore/blood-normalao.tga
+g_tNdFetchBaseGoreDecalGutsdColorMap	art/shared/characters/gore/gorecap-guts-color.tga
+g_tNdFetchBaseGoreDecalGutsNormalAOMap	art/shared/characters/gore/gorecap-guts-normalao.tga
+g_tNdFetchTearNormalMap	art/shared/characters/eyes/tear-normal.tga
+g_tNdFetchTearMaskMap	art/shared/characters/eyes/tear-mask.tga
+================================================
+Shader 5 = objects/characters/npc-named/nick/nick-hair-alpha:default,46b321cd-a269-4542-9ff9-c473bfd9773d,physical-character.fx
+================================================
+g_tNdFetchBaseColor01Map	art/objects/characters/npc-normal/textures/head-parts/hair/npc-male-hair-06-color.tga
+g_tNdFetchNormal01Map	art/objects/characters/npc-normal/textures/head-parts/hair/npc-male-hair-06-normal.tga
+g_tNdFetchTransparency01Map	art/objects/characters/npc-normal/textures/head-parts/hair/npc-male-hair-06-trans.tga
+g_tNdFetchAo01Map	art/objects/characters/npc-normal/textures/head-parts/hair/npc-male-hair-06-ao-mask.tga
+================================================
+Shader 6 = objects/characters/npc-named/nick/nick-eyebrows:default,32985e33-404a-4cb9-b516-9871c2a69ec2,physical-character.fx
+================================================
+g_tNdFetchNormal01Map	art/objects/characters/ellie/textures/ellie-brows-normal.tga
+g_tNdFetchTransparency01Map	art/objects/characters/ellie/textures/ellie-brows-trans.tga
+g_tNdFetchAo01Map	art/objects/characters/ellie/textures/ellie-brows-ao.tga
+================================================
+Shader 7 = objects/characters/npc-normal/head-parts/caruncle-dark-red:default,e06e8642-fc8b-4d59-a244-c5bd4e67e15e,physical-character.fx
+================================================
+g_tNdFetchBaseColor01Map	art/objects/characters/npc-normal/textures/head-parts/general-caruncle-01-color.tga
+g_tNdFetchFaceGenericMicroDetailMap	art/shared/characters/skin/skin-details/face-normal-ao/mask2-red-nao.tga
+g_tNdFetchFabricBurnColorMap	art/shared/characters/fabrics/burn/burn-color.tga
+g_tNdFetchFabricBurnNormalRoughMap	art/shared/characters/fabrics/burn/burn-normalrough.tga
+g_tNdFetchNewBloodColorMap	art/shared/characters/blood/blood-color.tga
+g_tNdFetchBloodNormalMap	art/shared/characters/blood/blood-normal.tga
+g_tNdFetchBaseGoreDecalBaseColorMap	art/shared/characters/gore/gore-base-color.tga
+g_tNdFetchBaseGoreDecalBaseNormalAOMap	art/shared/characters/gore/gore-base-normalao.tga
+g_tNdFetchBaseGoreDecalTissueColorMap	art/shared/characters/gore/gorecap-tissue-color.tga
+g_tNdFetchBaseGoreDecalTissueNormalAOMap	art/shared/characters/gore/gorecap-tissue-normalao.tga
+g_tNdFetchBaseGoreDecalFatColorMap	art/shared/characters/gore/gorecap-fat-color.tga
+g_tNdFetchBaseGoreDecalFatNormalAOMap	art/shared/characters/gore/gorecap-fat-normalao.tga
+g_tNdFetchBaseGoreDecalBloodColorMap	art/shared/characters/gore/blood-coloralpha.tga
+g_tNdFetchBaseGoreDecalBloodNormalAOMap	art/shared/characters/gore/blood-normalao.tga
+g_tNdFetchBaseGoreDecalGutsdColorMap	art/shared/characters/gore/gorecap-guts-color.tga
+g_tNdFetchBaseGoreDecalGutsNormalAOMap	art/shared/characters/gore/gorecap-guts-normalao.tga
+================================================
+Shader 8 = objects/characters/npc-normal/head-parts/tears:default,33b9ca56-961e-4b8e-999a-ea69d32cf03d,physical-character.fx
+================================================
+g_tNdFetchNormal02Map	art/shared/characters/eyes/tear-normal.tga
+g_tNdFetchLinearBlend02Map	art/shared/characters/eyes/tear-mask.tga
+g_tNdFetchFaceGenericMicroDetailMap	art/shared/characters/skin/skin-details/face-normal-ao/mask2-red-nao.tga
+g_tNdFetchFabricBurnColorMap	art/shared/characters/fabrics/burn/burn-color.tga
+g_tNdFetchFabricBurnNormalRoughMap	art/shared/characters/fabrics/burn/burn-normalrough.tga
+g_tNdFetchNewBloodColorMap	art/shared/characters/blood/blood-color.tga
+g_tNdFetchBloodNormalMap	art/shared/characters/blood/blood-normal.tga
+g_tNdFetchBaseGoreDecalBaseColorMap	art/shared/characters/gore/gore-base-color.tga
+g_tNdFetchBaseGoreDecalBaseNormalAOMap	art/shared/characters/gore/gore-base-normalao.tga
+g_tNdFetchBaseGoreDecalTissueColorMap	art/shared/characters/gore/gorecap-tissue-color.tga
+g_tNdFetchBaseGoreDecalTissueNormalAOMap	art/shared/characters/gore/gorecap-tissue-normalao.tga
+g_tNdFetchBaseGoreDecalFatColorMap	art/shared/characters/gore/gorecap-fat-color.tga
+g_tNdFetchBaseGoreDecalFatNormalAOMap	art/shared/characters/gore/gorecap-fat-normalao.tga
+g_tNdFetchBaseGoreDecalBloodColorMap	art/shared/characters/gore/blood-coloralpha.tga
+g_tNdFetchBaseGoreDecalBloodNormalAOMap	art/shared/characters/gore/blood-normalao.tga
+g_tNdFetchBaseGoreDecalGutsdColorMap	art/shared/characters/gore/gorecap-guts-color.tga
+g_tNdFetchBaseGoreDecalGutsNormalAOMap	art/shared/characters/gore/gorecap-guts-normalao.tga
+g_tNdFetchTearNormalMap	art/shared/characters/eyes/tear-normal.tga
+g_tNdFetchTearMaskMap	art/shared/characters/eyes/tear-mask.tga
+================================================
+Shader 9 = objects/characters/npc-named/nick/nick-beard:default,58ab7f43-dfa5-4e37-bda5-ecfadd5d39da,physical-character.fx
+================================================
+g_tNdFetchBaseColor01Map	art/objects/characters/npc-normal/textures/head-parts/general-stubble-black-01-color.tga
+g_tNdFetchNormal01Map	art/objects/characters/npc-normal/textures/head-parts/general-stubble-black-01-normal.tga
+g_tNdFetchTransparency01Map	art/objects/characters/npc-normal/textures/head-parts/general-stubble-black-01-trans.tga
+================================================
+Shader 10 = objects/characters/npc-named/nick/nick-hat:default,e1d4a71d-f5af-421f-aa51-f96095543f49,physical-character.fx
+================================================
+g_tNdFetchBaseColor01Map	art/objects/characters/npc-named/nick/nick-hat-color.tga
+g_tNdFetchNormal01Map	art/objects/characters/npc-named/nick/nick-hat-normal.tga
+g_tNdFetchAo01Map	art/objects/characters/npc-named/nick/nick-hat-ao.tga
+g_tNdFetchSnowMask05Map	art/objects/characters/npc-named/nick/nick-corpse-hat-snow-mask.tga
+g_tNdFetchLinearBlend02Map	art/objects/characters/npc-named/nick/nick-hat-leather-blend.tga
+g_tNdFetchLinearBlend03Map	art/objects/characters/npc-named/nick/nick-hat-leather-blend.tga
+g_tNdFetch1Knit1PurlNormalMap	art/shared/characters/fabrics/fabrics-1-knit-1-purl-normal-ao.tga
+g_tNdFetchVar1NormalMap	art/shared/characters/fabrics/mask/fabrics-var-normal-1.tga
+g_tNdFetchStitchesColorMap	art/shared/characters/fabrics/decal/stitches-holes-color.tga
+g_tNdFetchStitchesNormalMap	art/shared/characters/fabrics/decal/stitches-holes-normal.tga
+g_tNdFetchLeatherSoft1NormalMap	art/shared/characters/leather/leather-soft-1-normal-ao.tga
+g_tNdFetchSnowColorMap	art/shared/characters/snow/snow-color.tga
+g_tNdFetchSnowNormalMap	art/shared/characters/snow/snow-normal.tga
+g_tNdFetchSnowThinMaskMap	art/shared/characters/snow/snow-thin-mask.tga
+g_tNdFetchCharacterSnowThresholdMaskMap	art/shared/background/asset-library/textures/base/snow/snow-vehicle-clumpy-blend.tga
+g_tNdFetchSnowMaskDetailsMap	art/shared/characters/snow/snow-detail-mask.tga

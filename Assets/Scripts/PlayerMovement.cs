@@ -21,6 +21,9 @@ public class PlayerMovement : MonoBehaviour
 
     //player jump is default false
     private bool isJumpPressed = false;
+    
+
+    [SerializeField] PlayerAnimation animations;
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +36,8 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         //If player press Leftshitf, player can run
-        if (Input.GetKey(KeyCode.LeftShift))
+        bool isRunning = Input.GetKey(KeyCode.LeftShift);
+        if (isRunning)
         {
             //set speed to "playerRun" speed
             speed = playerRun;
@@ -51,6 +55,10 @@ public class PlayerMovement : MonoBehaviour
         float moveLeftOrRight = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         //Add rotation for player rotation to left or right
         float RotationLeftOrRight = Input.GetAxis("Mouse X") * rotation * Time.deltaTime;
+
+        
+        //Give the animation controller our input for playing the animations
+        animations.Animate(moveLeftOrRight, moveForwardOrBackward, isJumpPressed, isRunning, Input.GetKey(KeyCode.R)); //delegate reload later
 
         //player forward or backward
         transform.Translate(moveLeftOrRight, 0, moveForwardOrBackward);
@@ -71,6 +79,7 @@ public class PlayerMovement : MonoBehaviour
         if (isJumpPressed && time > 1.5f)
         {
             //jump
+            print(isJumpPressed);
             rb.velocity = new Vector3(0, 6, 0);
             //set time to 0
             time = 0.0f;

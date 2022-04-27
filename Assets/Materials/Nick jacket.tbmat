@@ -1,0 +1,122 @@
+@Sub SRSurface = SRSurfaceDetailNormalMap
+    Normal Map = @Tex file "../Textures/bab88950f33e84e3_dx10out.png" fileFull "D:/File Holder/tlou characters zip/Nick/Assets/Textures/bab88950f33e84e3_dx10out.png" srgb 0 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Scale & Bias = 1
+    Flip X = 0
+    Flip Y = 1
+    Flip Z = 0
+    Generate Z = 0
+    Object Space = 0
+    Detail Normal Map = @Tex file "../Textures/fabrics-gabardine-3-1-normal-ao.tga(1).dds" fileFull "D:/File Holder/tlou characters zip/Nick/Assets/Textures/fabrics-gabardine-3-1-normal-ao.tga(1).dds" srgb 0 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    UV Set = 0
+    Scale & Bias;detail = 1
+    Flip X;detail = 0
+    Flip Y;detail = 1
+    Flip Z;detail = 0
+    Detail Tiling = 200
+    Detail Offset = 0
+    Detail Weight Map = nil
+    Channel;detail = 0
+    Detail Weight = 0.391089
+@End
+
+@Sub SRAlbedo = SRAlbedoMap
+    Albedo Map = @Tex file "../Textures/0e5fe281ed897da9out.png" fileFull "D:/File Holder/tlou characters zip/Nick/Assets/Textures/0e5fe281ed897da9out.png" srgb 1 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Color = 1 1 1
+@End
+
+@Sub SRDiffusion = SRDiffusionMicrofiber
+    Sheen Map = nil
+    Sheen = 0.113636
+    Sheen Color = 1 1 1
+    Sheen Tint = 0.574257
+    Roughness Map = nil
+    Channel;roughness = 0
+    Sheen Roughness = 0.579208
+    Invert;roughness = 0
+    Use Microsurface = 0
+@End
+
+@Sub SRReflection = SRReflectionGGX
+@End
+
+@Sub SRMicrosurface = SRMicrosurfaceAdvancedMap
+    Microsurface Map = @Tex file "../Textures/fabrics-var-normal-1.tga(1).dds" fileFull "D:/File Holder/tlou characters zip/Nick/Assets/Textures/fabrics-var-normal-1.tga(1).dds" srgb 0 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Channel = 0
+    Mode = 0
+    Maximum = 0.232673
+    Minimum = 0
+    Exponent = 1.84732
+    Horizon Smoothing = 0.154363
+@End
+
+@Sub SRReflectivity = SRReflectivityMetalnessAdvanced
+    Metalness Map = @Tex file "../Textures/d433da9b640abf3eout.png" fileFull "D:/File Holder/tlou characters zip/Nick/Assets/Textures/d433da9b640abf3eout.png" srgb 0 filter 1 mip 1 aniso 4 wrap 1 visible 0 @EndTex
+    Channel = 0
+    Metalness = 0
+    Invert = 0
+    Specular Map = @Tex file "../Textures/0e5fe281ed897da9out.png" fileFull "D:/File Holder/tlou characters zip/Nick/Assets/Textures/0e5fe281ed897da9out.png" srgb 1 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Channel;advMtlMask = 0
+    Specular = 0.019802
+    Invert = 0
+    Specular Curve = 0
+    Conserve Energy = 1
+@End
+
+@Sub SRClearcoatReflection = SRReflectionGGX
+@End
+
+@Sub SRClearcoatMicrosurface = SRMicrosurfaceRoughnessMap
+    Roughness Map = @Tex file "../Textures/2ea349e7c15bc476_dx10out.png" fileFull "D:/File Holder/tlou characters zip/Nick/Assets/Textures/2ea349e7c15bc476_dx10out.png" srgb 1 filter 1 mip 1 aniso 4 wrap 1 visible 0 @EndTex
+    Channel = 0
+    Roughness = 0.450495
+    Invert;roughness = 0
+@End
+
+@Sub SRClearcoatReflectivity = SRReflectivitySpecularMap
+    Specular Map = @Tex file "../Textures/f033763e9220fa75_dx10out.png" fileFull "D:/File Holder/tlou characters zip/Nick/Assets/Textures/f033763e9220fa75_dx10out.png" srgb 1 filter 1 mip 1 aniso 4 wrap 1 visible 0 @EndTex
+    Channel;specular = 4
+    Intensity = 0.00545584
+    Color = 0.883688 1 0.880075
+    Fresnel = 0
+    Color;fresnel = 1 1 1
+    Conserve Energy = 1
+@End
+
+@Sub SREmission = SREmissiveMap
+    Emissive Map = @Tex file "../Textures/15a0a5dbd74b84b5_dx10out.png" fileFull "D:/File Holder/tlou characters zip/Nick/Assets/Textures/15a0a5dbd74b84b5_dx10out.png" srgb 1 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Color = 0.134517 0.0954893 0.0593957
+    Intensity = 0.0898863
+    UV Set = 0
+    Glow = 0 0 0
+@End
+
+@Sub SROcclusion = SROcclusionMap
+    Occlusion Map = @Tex file "../Textures/afa41634155546e3_dx10out.png" fileFull "D:/File Holder/tlou characters zip/Nick/Assets/Textures/afa41634155546e3_dx10out.png" srgb 1 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Channel;occlusion = 0
+    Occlusion = 1
+    UV Set = 0
+    Vertex Channel = 0
+    Cavity Map = @Tex file "../Textures/afa41634155546e3_dx10out.png" fileFull "D:/File Holder/tlou characters zip/Nick/Assets/Textures/afa41634155546e3_dx10out.png" srgb 1 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Channel;cavity = 0
+    Diffuse Cavity = 0.415842
+    Specular Cavity = 0
+@End
+
+@Sub SRTransparency = SRTransparencyDither
+    Use Albedo Alpha = 1
+    Alpha Map = nil
+    Channel = 3
+    Alpha = 2
+@End
+
+@Sub SRMerge = SRMerge
+    Texture Tiling = 1
+    Tile U = 1
+    Offset U = 0
+    Tile V = 1
+    Offset V = 0
+    Wrap = 1
+    Aniso = 4
+    Filter = 1
+@End
+
