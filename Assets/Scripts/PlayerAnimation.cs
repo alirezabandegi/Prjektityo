@@ -23,7 +23,7 @@ public class PlayerAnimation : MonoBehaviour
         _animator.SetBool(Moving, isMoving);
         _animator.SetBool(Running, isRunning);
         _animator.SetBool(Jumping, isJumpPressed);
-        _animator.SetBool("Reloading", isReloading);
+        _animator.SetBool(Reloading, isReloading);
         print(isReloading);
     }
 }
