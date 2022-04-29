@@ -34,15 +34,20 @@ public class PlayerMovement : MonoBehaviour
     {
         //If player press Leftshitf, player can run
         bool isRunning = Input.GetKey(KeyCode.LeftShift);
-        if (isRunning)
+        bool isLeftControlPressed = Input.GetKey(KeyCode.LeftControl);
+        if (isRunning && !isLeftControlPressed)
         {
             //set speed to "playerRun" speed
             speed = playerRun;
         }
         //If player not press Leftshitf, player walk
-        else if (!isRunning)
+        else if (!isRunning && isLeftControlPressed)
         {
             //set speed to "playerWalk" speed
+            speed = playerWalk;
+        }
+        else if(!isRunning && !isLeftControlPressed)
+        {
             speed = playerWalk;
         }
 

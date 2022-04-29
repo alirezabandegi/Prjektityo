@@ -206,20 +206,20 @@ public class CarectersAnimations : MonoBehaviour
             animator.SetBool(isRuningHash, false);
         }
 
-        if (!isRuningRight && (isWPressed && isDPressed  && isLeftShiftPressed))
+        if (!isRuningRight && (isDPressed  && isLeftShiftPressed))
         {
             animator.SetBool(isRuningRightHash, true);
         }
-        else if (isRuningRight && !(isWPressed && isDPressed && isLeftShiftPressed))
+        else if (isRuningRight && !(isDPressed && isLeftShiftPressed))
         {
             animator.SetBool(isRuningRightHash, false);
         }
 
-        if (!isRuningLeft && (isWPressed && isAPressed && isLeftShiftPressed))
+        if (!isRuningLeft && (isAPressed && isLeftShiftPressed))
         {
             animator.SetBool(isRuningLeftHash, true);
         }
-        else if (isRuningLeft && !(isWPressed && isAPressed && isLeftShiftPressed))
+        else if (isRuningLeft && !(isAPressed && isLeftShiftPressed))
         {
             animator.SetBool(isRuningLeftHash, false);
         }
