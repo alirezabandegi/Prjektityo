@@ -672,7 +672,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1590826760759127944}
   m_LocalRotation: {x: 0.014493154, y: 0.027443264, z: -0.052303325, w: 0.9981489}
-  m_LocalPosition: {x: 5.691053e-10, y: 0.38067546, z: -0.0000000023428464}
+  m_LocalPosition: {x: 0, y: 0.38067546, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4798928918899606575}
@@ -1475,6 +1475,7 @@ GameObject:
   - component: {fileID: 7458133525762012844}
   - component: {fileID: 4167522650752757947}
   - component: {fileID: 1614040119}
+  - component: {fileID: 8735562893139855521}
   m_Layer: 0
   m_Name: Shrek
   m_TagString: Untagged
@@ -1584,6 +1585,20 @@ CapsuleCollider:
   m_Height: 2.77
   m_Direction: 1
   m_Center: {x: 0, y: -0.35, z: 0.06}
+--- !u!114 &8735562893139855521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4574821672267333592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d994d5f9f5b747c4b80f23155df1da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gun: {fileID: 660487200753379776, guid: 80d2bcb00c37c8d4380252024cd63f8f, type: 3}
+  leftHand: {fileID: 7602081758190704458}
 --- !u!1 &5057077945501583898
 GameObject:
   m_ObjectHideFlags: 0
