@@ -48,8 +48,8 @@ public class Gun : MonoBehaviour
     {
         nextShot = Time.time + fireRate;
         _source.PlayOneShot(_source.clip);
-        GameObject bullet = Instantiate(bulletObject, muzzle.position, muzzle.rotation, _gunTransform);
-        Rigidbody rb = bullet.AddComponent<Rigidbody>(); //create rigidbodies with script so they are all identical
+        GameObject bullet = Instantiate(bulletObject, muzzle.position, muzzle.rotation);
+        var rb = bullet.AddComponent<Rigidbody>(); //create rigidbodies with script so they are all identical
         rb.AddForce(transform.forward * bulletSpeed);
     }
 
