@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     //Get RigidBody
     private Rigidbody rb;
+    [SerializeField] Transform camTransform;
 
     //Player walk speed for forward or backward;
     public float playerWalk;
@@ -55,14 +56,9 @@ public class PlayerMovement : MonoBehaviour
         float moveForwardOrBackward = Input.GetAxis("Vertical") * speed * Time.deltaTime;
         //Add speed for player left or right
         float moveLeftOrRight = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
-        //Add rotation for player rotation to left or right
-        float RotationLeftOrRight = Input.GetAxis("Mouse X") * rotation * Time.deltaTime;
-
-
+        
         //player forward or backward
-        transform.Translate(moveLeftOrRight, 0, moveForwardOrBackward);
-        //player rotation
-        transform.Rotate(0, RotationLeftOrRight, 0);
+        transform.position += camTransform.TransformDirection(new Vector3(moveLeftOrRight, 0, moveForwardOrBackward));
         //if player press "Space" bool is true
         isJumpPressed = Input.GetKey(KeyCode.Space);
 
@@ -71,6 +67,11 @@ public class PlayerMovement : MonoBehaviour
     // Fixed Update is called once per frame for most frames but not all
     void FixedUpdate()
     {
+        //align player rotation with FPS camera
+        Transform thisTransform = transform;
+        Quaternion thisRotation = thisTransform.rotation;
+        thisTransform.rotation =  Quaternion.Euler(thisRotation.x, camTransform.rotation.y, thisRotation.z);;
+
         //add game time to "time" variable
         time += Time.fixedDeltaTime;
 
