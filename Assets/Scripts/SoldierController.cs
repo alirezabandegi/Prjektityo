@@ -5,20 +5,26 @@ using UnityEngine.UI;
 public class SoldierController : MonoBehaviour
 {
     Soldier _soldier;
-    [SerializeField] Text firingModeText;
-
+    [SerializeField] GameObject gunInfoCanvasPrefab;
+    GunUI _gunUI;
+    
     void Awake()
     {
         _soldier = GetComponent<Soldier>();
-        
         _soldier.EquipGun(_soldier.gun);
+    }
+
+    void Start()
+    {
+        Debug.Assert(gunInfoCanvasPrefab.gameObject.scene.name == null, "Gun UI must be a prefab!");
+        _gunUI = Instantiate(gunInfoCanvasPrefab).GetComponent<GunUI>();
         SetFiringMode(_soldier.gun.Mode);
     }
 
     void SetFiringMode(int index)
     {
         _soldier.gun.Mode = (int) _soldier.gun.modes[index];
-        firingModeText.text = $"(X) Mode: {Enum.GetName(typeof(Gun.FiringMode), index)}";
+        _gunUI.SetFiringMode(_soldier.gun.modes[_soldier.gun.Mode]);
     }
     
     void Update()
