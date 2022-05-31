@@ -10,10 +10,14 @@ public class Gun : MonoBehaviour
     [SerializeField] int ammo, magazineSize;
     [SerializeField] GameObject bulletObject;
     [SerializeField] Transform muzzle;
+
+    public Soldier Soldier { get; set; }
+    int EnemyLayer => Soldier.enemyLayer;
+    
     AudioSource _source;
     Transform _gunTransform;
 
-    float nextShot = 0f;
+    float _nextShot = 0f;
 
     public enum FiringMode
     {
@@ -46,7 +50,7 @@ public class Gun : MonoBehaviour
 
     void ShootBullet()
     {
-        nextShot = Time.time + fireRate;
+        _nextShot = Time.time + fireRate;
         _source.PlayOneShot(_source.clip);
         GameObject bullet = Instantiate(bulletObject, muzzle.position, muzzle.rotation);
         var rb = bullet.AddComponent<Rigidbody>(); //create rigidbodies with script so they are all identical
@@ -72,8 +76,8 @@ public class Gun : MonoBehaviour
 
     public void Shoot()
     {
-        if (State != GunState.Ready || Time.time < nextShot) return;
-        nextShot = Time.time + fireRate;
+        if (State != GunState.Ready || Time.time < _nextShot) return;
+        _nextShot = Time.time + fireRate;
         State = GunState.Shooting;
         if (Mode == (int) FiringMode.Semiautomatic)
         {
