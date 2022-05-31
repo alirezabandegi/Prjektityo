@@ -78,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
         if (isJumpPressed && time > 1.5f)
         {
             //jump
-            rb.velocity = new Vector3(0, 6, 0);
+            rb.velocity = new Vector3(0, 8, 0);
             //set time to 0
             time = 0.0f;
         }

@@ -1055,6 +1055,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5523899608464874951}
   - component: {fileID: 3314042572653096390}
+  - component: {fileID: 1340480944565032632}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1119,6 +1120,14 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!81 &1340480944565032632
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2448746234417013611}
+  m_Enabled: 1
 --- !u!1 &2546945344151826365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1476,6 +1485,7 @@ GameObject:
   - component: {fileID: 4167522650752757947}
   - component: {fileID: 1614040119}
   - component: {fileID: 8735562893139855521}
+  - component: {fileID: 1111926923}
   m_Layer: 0
   m_Name: Shrek
   m_TagString: Untagged
@@ -1492,7 +1502,7 @@ Transform:
   m_GameObject: {fileID: 4574821672267333592}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 45.44891, y: 0.5, z: 29.687216}
-  m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1794332072311268468}
   - {fileID: 8050807383324748482}
@@ -1597,8 +1607,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d994d5f9f5b747c4b80f23155df1da5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Gun: {fileID: 660487200753379776, guid: 80d2bcb00c37c8d4380252024cd63f8f, type: 3}
-  leftHand: {fileID: 7602081758190704458}
+  gun: {fileID: 660487200753379776, guid: 80d2bcb00c37c8d4380252024cd63f8f, type: 3}
+  grip: {fileID: 3029177663511493953}
+--- !u!114 &1111926923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4574821672267333592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee344df7bf465f449b4313d96369397c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firingModeText: {fileID: 0}
 --- !u!1 &5057077945501583898
 GameObject:
   m_ObjectHideFlags: 0
