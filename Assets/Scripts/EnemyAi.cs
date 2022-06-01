@@ -1,6 +1,7 @@
 ﻿
 using UnityEngine;
 using UnityEngine.AI;
+[RequireComponent(typeof(Soldier))]
 
 public class EnemyAi : MonoBehaviour
 {
@@ -9,9 +10,8 @@ public class EnemyAi : MonoBehaviour
     public Transform player;
 
     public LayerMask whatIsGround, whatIsPlayer;
-
-    public float health;
-
+    private Soldier soldier;
+    
     //Patroling
     public Vector3 walkPoint;
     bool walkPointSet;
@@ -30,6 +30,8 @@ public class EnemyAi : MonoBehaviour
     {
         player = GameObject.FindWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
+        soldier = GetComponent<Soldier>();
+        soldier.EquipGun(soldier.gun);
     }
 
     private void Update()
@@ -77,32 +79,15 @@ public class EnemyAi : MonoBehaviour
     {
         //Make sure enemy doesn't move
         agent.SetDestination(transform.position);
-
         transform.LookAt(player);
 
-        if (!alreadyAttacked)
+        if (soldier.gun.State != Gun.GunState.Shooting)
         {
-            ///Attack code here
-            Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
-            rb.AddForce(transform.up * 8f, ForceMode.Impulse);
-            ///End of attack code
-
-            alreadyAttacked = true;
-            Invoke(nameof(ResetAttack), timeBetweenAttacks);
+            //Attack code here
+            soldier.gun.ShootAt(player);
         }
     }
-    private void ResetAttack()
-    {
-        alreadyAttacked = false;
-    }
 
-    public void TakeDamage(int damage)
-    {
-        health -= damage;
-
-        if (health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
-    }
     private void DestroyEnemy()
     {
         Destroy(gameObject);
