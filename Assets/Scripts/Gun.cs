@@ -16,7 +16,8 @@ public class Gun : MonoBehaviour
     
     AudioSource _source;
     Transform _gunTransform;
-
+    
+    bool CanShoot => State == GunState.Ready && Time.time > _nextShot;
     float _nextShot = 0f;
 
     public enum FiringMode
@@ -48,45 +49,52 @@ public class Gun : MonoBehaviour
         _gunTransform = transform;
     }
 
-    void ShootBullet()
+    void ShootBullet(Vector3 origin)
     {
         _nextShot = Time.time + fireRate;
         _source.PlayOneShot(_source.clip);
         GameObject bulletObject = Instantiate(this.bullet.gameObject, muzzle.position, muzzle.rotation);
         var newBullet = bulletObject.GetComponent<Bullet>();
         newBullet.damageLayer = EnemyLayer;
-        newBullet.Propel(muzzle.forward, bulletSpeed, range, damage);
+        newBullet.Propel(origin, bulletSpeed, range, damage);
     }
 
-    IEnumerator FireAuto() //shoots multiple bullets until the gun's state isn't "shooting"
+    IEnumerator FireAuto(Vector3 direction) //shoots multiple bullets until the gun's state isn't "shooting"
     {
         while (State == GunState.Shooting)
         {
-            ShootBullet();
+            ShootBullet(direction);
             yield return new WaitForSeconds(fireRate);
         }
         _source.loop = false;
     }
 
-    IEnumerator FireSemi() //shoots one bullet
+    IEnumerator FireSemi(Vector3 direction) //shoots one bullet
     {
-        ShootBullet();
+        ShootBullet(direction);
         yield return new WaitForSeconds(fireRate);
         StopShooting();
     }
 
     public void Shoot()
     {
-        if (State != GunState.Ready || Time.time < _nextShot) return;
+        if (!CanShoot) return;
         _nextShot = Time.time + fireRate;
         State = GunState.Shooting;
         if (Mode == (int) FiringMode.Semiautomatic)
         {
-            StartCoroutine(FireSemi());
+            StartCoroutine(FireSemi(muzzle.forward));
         } else if (Mode == (int) FiringMode.Automatic)
         {
-            StartCoroutine(FireAuto());
+            StartCoroutine(FireAuto(muzzle.forward));
         }
+    }
+
+    public void ShootAt(Transform target)
+    {
+        if (!CanShoot) return;
+        Vector3 targetDirection = (target.position - muzzle.position).normalized;
+        StartCoroutine(FireSemi(targetDirection));
     }
 
     public void StopShooting()
