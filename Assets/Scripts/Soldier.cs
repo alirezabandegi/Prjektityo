@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Soldier : MonoBehaviour
 {
@@ -17,10 +18,10 @@ public class Soldier : MonoBehaviour
         {
             int newHP = Mathf.Clamp(value, 0, maxHP);
             hp = newHP;
-            print(gameObject.name + "HP: " + newHP);
             if (HP <= 0)
             {
                 Destroy(gameObject);
+                SceneManager.LoadScene("Bloody war");
             }
         }
     }
