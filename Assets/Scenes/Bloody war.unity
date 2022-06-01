@@ -227,9 +227,9 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 2117600028}
-    - target: {fileID: 3668643151498164986, guid: 44c90ff1c348d65499e73a25c1c17b5c, type: 3}
-      propertyPath: cameraSensitivity
-      value: 1
+    - target: {fileID: 3668643151498164988, guid: 44c90ff1c348d65499e73a25c1c17b5c, type: 3}
+      propertyPath: field of view
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3668643151498164989, guid: 44c90ff1c348d65499e73a25c1c17b5c, type: 3}
       propertyPath: m_RootOrder

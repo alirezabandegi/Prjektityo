@@ -449,6 +449,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d994d5f9f5b747c4b80f23155df1da5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &849787376 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3668643151498164989, guid: 44c90ff1c348d65499e73a25c1c17b5c, type: 3}
+  m_PrefabInstance: {fileID: 6416760}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &986403677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -459,7 +464,7 @@ PrefabInstance:
     - target: {fileID: 675626249594712835, guid: 4b708c600857a0b44830bdc1fc03ef59, type: 3}
       propertyPath: camTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 849787376}
     - target: {fileID: 675626249594712838, guid: 4b708c600857a0b44830bdc1fc03ef59, type: 3}
       propertyPath: m_Name
       value: Shrek
@@ -470,11 +475,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 675626249594712894, guid: 4b708c600857a0b44830bdc1fc03ef59, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.85
       objectReference: {fileID: 0}
     - target: {fileID: 675626249594712894, guid: 4b708c600857a0b44830bdc1fc03ef59, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.953
+      value: 0.67
       objectReference: {fileID: 0}
     - target: {fileID: 675626249594712894, guid: 4b708c600857a0b44830bdc1fc03ef59, type: 3}
       propertyPath: m_LocalPosition.z
