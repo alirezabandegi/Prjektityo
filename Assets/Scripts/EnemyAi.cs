@@ -7,9 +7,10 @@ public class EnemyAi : MonoBehaviour
 {
     public NavMeshAgent agent;
 
-    public Transform player;
+    [SerializeField] Transform enemy;
 
-    public LayerMask whatIsGround, whatIsPlayer;
+    public LayerMask whatIsGround;
+    private LayerMask whatIsEnemy;
     private Soldier soldier;
     
     //Patroling
@@ -28,17 +29,17 @@ public class EnemyAi : MonoBehaviour
 
     private void Awake()
     {
-        player = GameObject.FindWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
         soldier = GetComponent<Soldier>();
         soldier.EquipGun(soldier.gun);
+        whatIsEnemy = soldier.enemyLayer;
     }
 
     private void Update()
     {
         //Check for sight and attack range
-        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsEnemy);
+        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsEnemy);
 
         if (!playerInSightRange && !playerInAttackRange) Patroling();
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
@@ -72,19 +73,25 @@ public class EnemyAi : MonoBehaviour
 
     private void ChasePlayer()
     {
-        agent.SetDestination(player.position);
+        agent.SetDestination(enemy.position);
     }
 
     private void AttackPlayer()
     {
         //Make sure enemy doesn't move
         agent.SetDestination(transform.position);
-        transform.LookAt(player);
+        transform.LookAt(enemy);
 
-        if (soldier.gun.State != Gun.GunState.Shooting)
+        Vector3 muzzlePosition = soldier.gun.muzzle.position;
+        Vector3 playerPosition = enemy.position;
+        Vector3 direction = (playerPosition - muzzlePosition).normalized;
+        float distance = Vector3.Distance(muzzlePosition, playerPosition);
+        bool hitMap = Physics.Raycast(muzzlePosition, direction, distance, whatIsGround);
+        Debug.DrawRay(muzzlePosition, direction);
+        if (soldier.gun.State != Gun.GunState.Shooting && !hitMap)
         {
             //Attack code here
-            soldier.gun.ShootAt(player);
+            soldier.gun.ShootAt(enemy);
         }
     }
 
