@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5549308140636676556}
   - component: {fileID: 7975490571867397374}
   - component: {fileID: 8921760620462813995}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BSP_Object_model_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1377083750396950184}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: secondMap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 6798656645848252260}
   - component: {fileID: 5851291814639730117}
   - component: {fileID: 3377988340893124294}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BSP_Object_model_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -250,7 +250,7 @@ GameObject:
   - component: {fileID: 8102474893025243914}
   - component: {fileID: 7836313954532559850}
   - component: {fileID: 8013318338278441732}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BSP_Object_model_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
