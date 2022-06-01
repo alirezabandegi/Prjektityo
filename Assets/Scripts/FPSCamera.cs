@@ -26,6 +26,7 @@ public class FPSCamera : MonoBehaviour
     
     void LateUpdate()
     {
+        if (_targetTransform == null) return;
         Vector3 difference = _cam.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         difference.Normalize();
         float rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
