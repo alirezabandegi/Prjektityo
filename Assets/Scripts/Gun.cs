@@ -6,9 +6,9 @@ using UnityEngine;
 public class Gun : MonoBehaviour
 {
     //Gun data
-    [SerializeField] float damage, fireRate, range, bulletSpeed; //fire rate i.e. fire cooldown is in seconds
-    [SerializeField] int ammo, magazineSize;
-    [SerializeField] GameObject bulletObject;
+    [SerializeField] float fireRate, range, bulletSpeed; //fire rate i.e. fire cooldown is in seconds
+    [SerializeField] int damage, ammo, magazineSize;
+    [SerializeField] Bullet bullet;
     [SerializeField] Transform muzzle;
 
     public Soldier Soldier { get; set; }
@@ -52,9 +52,10 @@ public class Gun : MonoBehaviour
     {
         _nextShot = Time.time + fireRate;
         _source.PlayOneShot(_source.clip);
-        GameObject bullet = Instantiate(bulletObject, muzzle.position, muzzle.rotation);
-        var rb = bullet.AddComponent<Rigidbody>(); //create rigidbodies with script so they are all identical
-        rb.AddForce(transform.forward * bulletSpeed);
+        GameObject bulletObject = Instantiate(this.bullet.gameObject, muzzle.position, muzzle.rotation);
+        var newBullet = bulletObject.GetComponent<Bullet>();
+        newBullet.damageLayer = EnemyLayer;
+        newBullet.Propel(muzzle.forward, bulletSpeed, range, damage);
     }
 
     IEnumerator FireAuto() //shoots multiple bullets until the gun's state isn't "shooting"
