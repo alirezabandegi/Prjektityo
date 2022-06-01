@@ -47,6 +47,7 @@ public class Gun : MonoBehaviour
         State = GunState.Ready;
         _source = GetComponent<AudioSource>();
         _gunTransform = transform;
+        _source.enabled = true;
     }
 
     void ShootBullet(Vector3 origin)
