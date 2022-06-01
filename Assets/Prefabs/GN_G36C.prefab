@@ -328,11 +328,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 15
   fireRate: 0.2
-  range: 100
-  bulletSpeed: 100000
+  range: 100000
+  bulletSpeed: 760
   ammo: 30
   magazineSize: 30
-  bulletObject: {fileID: 6909324341870862463, guid: 8a8eca5eceb8d654597749ddf427c435, type: 3}
+  bullet: {fileID: 4376201225739118842, guid: 8a8eca5eceb8d654597749ddf427c435, type: 3}
   muzzle: {fileID: 7653631085126140055}
   modes: 0000000001000000
 --- !u!82 &1720793136678265005
