@@ -21,19 +21,21 @@ public class Bullet : MonoBehaviour
     
     public void Propel(Vector3 direction, float bulletSpeed, float range, int damage)
     {
-        _rb.AddForce(direction * bulletSpeed);
-        if (Physics.Raycast(gameObject.transform.position, direction, out RaycastHit hitMap, range, _mapLayer))
+        if (Physics.Raycast(gameObject.transform.position, direction, out RaycastHit hit, range, damageLayer))
         {
-            gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
-        }
-        else
-        {
-            if (Physics.Raycast(gameObject.transform.position, direction, out RaycastHit hit, range, damageLayer))
+            float distance = Vector3.Distance(hit.point, transform.position);
+            if (Physics.Raycast(gameObject.transform.position, direction, out RaycastHit hitMap, distance, _mapLayer))
             {
+                gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            }
+            else
+            {
+                print("Ready");
                 var hitSoldier = hit.collider.gameObject.GetComponent<Soldier>();
                 hitSoldier.HP -= damage;   
             }
         }
+        _rb.AddForce(direction * bulletSpeed);
 
         float t = range / bulletSpeed;
         StartCoroutine(DestroyAfterSeconds(t));
