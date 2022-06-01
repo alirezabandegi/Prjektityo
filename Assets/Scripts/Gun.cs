@@ -9,7 +9,7 @@ public class Gun : MonoBehaviour
     [SerializeField] float fireRate, range, bulletSpeed; //fire rate i.e. fire cooldown is in seconds
     [SerializeField] int damage, ammo, magazineSize;
     [SerializeField] Bullet bullet;
-    [SerializeField] Transform muzzle;
+    public Transform muzzle;
 
     public Soldier Soldier { get; set; }
     int EnemyLayer => Soldier.enemyLayer;
@@ -79,7 +79,6 @@ public class Gun : MonoBehaviour
     public void Shoot()
     {
         if (!CanShoot) return;
-        _nextShot = Time.time + fireRate;
         State = GunState.Shooting;
         if (Mode == (int) FiringMode.Semiautomatic)
         {
