@@ -1021,6 +1021,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1512864052}
+    - target: {fileID: 1037456309524928527, guid: 1a1efae76b120a94f806ef77f4e67057, type: 3}
+      propertyPath: sightRange
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037456309524928527, guid: 1a1efae76b120a94f806ef77f4e67057, type: 3}
+      propertyPath: attackRange
+      value: 55
+      objectReference: {fileID: 0}
     - target: {fileID: 5229482318822897065, guid: 1a1efae76b120a94f806ef77f4e67057, type: 3}
       propertyPath: m_Constraints
       value: 112
