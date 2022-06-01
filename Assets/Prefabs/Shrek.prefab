@@ -103,7 +103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 675626249372460361}
   - component: {fileID: 675626249372460362}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: act_eye.dds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -563,9 +563,9 @@ GameObject:
   - component: {fileID: 675626249594712833}
   - component: {fileID: 675626249594712832}
   - component: {fileID: 675626249594712839}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shrek
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -702,7 +702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee344df7bf465f449b4313d96369397c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firingModeText: {fileID: 0}
+  gunInfoCanvasPrefab: {fileID: 7349317436957116694, guid: 13adeebdf233ee444b45a63ddb064c73, type: 3}
 --- !u!1 &675626249658683583
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,7 +808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 675626249782391453}
   - component: {fileID: 675626249782391454}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: act_strelok7171_zybaref
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -924,7 +924,7 @@ GameObject:
   m_Component:
   - component: {fileID: 675626249820897946}
   - component: {fileID: 675626249820897947}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: act_stalke2_sh1.dds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1200,7 +1200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 675626250152227593}
   - component: {fileID: 675626250152227594}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: act_strelok7171_Shrek
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1507,7 +1507,7 @@ GameObject:
   m_Component:
   - component: {fileID: 675626250339856618}
   - component: {fileID: 675626250339856619}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: act_stalker_nebo_3.dds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1879,7 +1879,7 @@ GameObject:
   m_Component:
   - component: {fileID: 675626250539290283}
   - component: {fileID: 675626250539290276}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: props_kotelok_army_ot_strelok71
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2274,7 +2274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 675626250775800881}
   - component: {fileID: 675626250775800882}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: act_strelok7171_Rat_Whitearef
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2668,7 +2668,7 @@ GameObject:
   m_Component:
   - component: {fileID: 675626251134178208}
   - component: {fileID: 675626251134178209}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: act_stalke2_sh.dds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2806,7 +2806,7 @@ GameObject:
   m_Component:
   - component: {fileID: 675626251194215728}
   - component: {fileID: 675626251194215729}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: eyeRat.dds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2921,7 +2921,7 @@ GameObject:
   m_Component:
   - component: {fileID: 675626251237771584}
   - component: {fileID: 675626251237771585}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: act_strelok7171_Rat_White
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3036,7 +3036,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 675626251420173506}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
