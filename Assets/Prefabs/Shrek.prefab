@@ -689,6 +689,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   grip: {fileID: 675626249698915626}
+  maxHP: 100
   spine: {fileID: 675626251134879696}
 --- !u!114 &675626249594712839
 MonoBehaviour:
