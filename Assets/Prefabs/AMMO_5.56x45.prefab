@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3777140655097390703}
   - component: {fileID: 8403938856485481835}
   - component: {fileID: 4376201225739118842}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: AMMO_5.56x45
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,3 +129,6 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 64
+  mapLayer:
+    serializedVersion: 2
+    m_Bits: 128
