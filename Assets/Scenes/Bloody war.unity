@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1512864052}
+    - target: {fileID: 5229482318822897065, guid: 1a1efae76b120a94f806ef77f4e67057, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 5780468369589158443, guid: 1a1efae76b120a94f806ef77f4e67057, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -484,6 +488,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 675626249594712894, guid: 4b708c600857a0b44830bdc1fc03ef59, type: 3}
   m_PrefabInstance: {fileID: 769742046}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1712629251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6589762375972165777, guid: 1a1efae76b120a94f806ef77f4e67057, type: 3}
+  m_PrefabInstance: {fileID: 468543936}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1712629259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712629251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee344df7bf465f449b4313d96369397c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gunInfoCanvasPrefab: {fileID: 7349317436957116694, guid: 13adeebdf233ee444b45a63ddb064c73, type: 3}
 --- !u!1001 &1483614069714672487
 PrefabInstance:
   m_ObjectHideFlags: 0
