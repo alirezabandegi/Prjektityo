@@ -58,7 +58,9 @@ public class PlayerMovement : MonoBehaviour
         float moveLeftOrRight = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         
         //player forward or backward
-        transform.position += camTransform.TransformDirection(new Vector3(moveLeftOrRight, 0, moveForwardOrBackward));
+        Vector3 dir = camTransform.TransformVector(new Vector3(moveLeftOrRight, 0, moveForwardOrBackward));
+        dir.y = 0;
+        transform.position += dir;
         //if player press "Space" bool is true
         isJumpPressed = Input.GetKey(KeyCode.Space);
 
